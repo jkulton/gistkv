@@ -6,6 +6,11 @@
 
 Use GitHub gists as simple key-value databases
 
+## What is this for?
+
+- Simple non-sensitive datastore for scripts, crons, or CLI tools
+- MVP database for prototyping
+
 ## Installation
 
 ```
@@ -51,6 +56,8 @@ g.keys
 g.update(score: 11, days: ["Saturday"]) # update multiple keys at once
 ```
 The above example code resulted in [this gist](https://gist.github.com/jkulton/67df2395daa634c6f4c3a783847324be).
+
+It's also possible to create a read-only `GistKV::Client` by omitting the GitHub access token on creation. Please note this client will be subject to the GitHub API's public rate limits. [See docs for more info](https://docs.github.com/en/rest).
 
 ## Important Details
 
