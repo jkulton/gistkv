@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="gistkv.png" width=225 />
+</p>
+
 # GistKV
 
 [![Gem Version](https://badge.fury.io/rb/gistkv.svg)](https://badge.fury.io/rb/gistkv)
