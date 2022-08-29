@@ -1,5 +1,7 @@
 # GistKV
 
+[![Gem Version](https://badge.fury.io/rb/gistkv.svg)](https://badge.fury.io/rb/gistkv)
+
 Use GitHub gists as simple key/value databases
 
 ## Installation
