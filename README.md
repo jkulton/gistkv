@@ -8,7 +8,7 @@ Use GitHub gists as simple key-value databases
 
 ## What is this for?
 
-- Simple non-sensitive[^1] datastore for scripts, crons, or CLI tools
+- Simple **non-sensitive**[^1] datastore for scripts, crons, or CLI tools
 - MVP database for prototyping
 
 ## Installation
@@ -24,7 +24,8 @@ Use `GistKV::Client.create_database` to create a new GistKV database. The method
 ```rb
 require 'gistkv'
 
-GistKV::Client.create_database(ENV['GITHUB_TOKEN']) # returns id of created gist
+# returns id of created gist
+GistKV::Client.create_database(ENV['GITHUB_TOKEN'])
 # => f9ba626808266b93b7631aeb8321dbcf
 ```
 
@@ -43,17 +44,21 @@ g.set("score", 10)
 g.get("score")
 # => 10
 
-g["score"] # alias for .get
+# alias for .get
+g["score"]
 # => 10
 
-g["days"] = ["Friday", "Saturday", "Sunday"] # alias for .set
+# alias for .set
+g["days"] = ["Friday", "Saturday", "Sunday"]
+
 g.get("days")
 # => ["Friday", "Saturday", "Sunday"]
 
 g.keys
 # => ["score", "days"]
 
-g.update(score: 11, days: ["Saturday"]) # update multiple keys at once
+# update multiple keys at once
+g.update(score: 11, days: ["Saturday"])
 ```
 The above example code resulted in [this gist](https://gist.github.com/jkulton/67df2395daa634c6f4c3a783847324be).
 
