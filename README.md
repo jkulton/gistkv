@@ -39,12 +39,14 @@ g.get("score")
 g["score"] # alias for .get
 # => 10
 
-g["day"] = "Friday" # alias for .set
+g["days"] = ["Friday", "Saturday", "Sunday"] # alias for .set
+g.get("days")
+# => ["Friday", "Saturday", "Sunday"]
 
 g.keys
-# => ["score", "day"]
+# => ["score", "days"]
 
-g.update(score: 11, day: "Saturday")
+g.update(score: 11, days: ["Saturday"]) # update multiple keys at once
 ```
 
 ## Important Details
