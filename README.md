@@ -52,6 +52,7 @@ g.keys
 
 g.update(score: 11, days: ["Saturday"]) # update multiple keys at once
 ```
+The above example code resulted in [this gist](https://gist.github.com/jkulton/67df2395daa634c6f4c3a783847324be).
 
 ## Important Details
 
