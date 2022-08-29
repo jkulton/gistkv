@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="gistkv.png" width=225 />
-</p>
+<img src="gistkv.png" width=100 height=100 />
 
 # GistKV
 
