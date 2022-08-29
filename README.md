@@ -40,7 +40,10 @@ require 'gistkv'
 
 g = GistKV::Client.new(ENV['GIST_ID'], ENV['GITHUB_TOKEN'])
 
+# set a value
 g.set("score", 10)
+
+# get a value
 g.get("score")
 # => 10
 
@@ -54,6 +57,7 @@ g["days"] = ["Friday", "Saturday", "Sunday"]
 g.get("days")
 # => ["Friday", "Saturday", "Sunday"]
 
+# get list of keys
 g.keys
 # => ["score", "days"]
 
